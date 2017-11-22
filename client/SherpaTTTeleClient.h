@@ -30,23 +30,23 @@ class SherpaTTTeleClient {
     }
 
     const Image& getFrontalCameraImage() const {
-      return m_FrontalCamImage;
+      return m_FrontalCameraImage;
     }
 
-    const Image& getGripperCamerImage() const {
-      return m_GripperCamImage;
+    const Image& getGripperCameraImage() const {
+      return m_GripperCameraImage;
     }
 
     const IMU& getIMUData() const {
-      return m_IMU;
+      return m_IMUData;
     }
 
     const Joints& getManipulatorJointState() const {
-      return m_ManipulatorJoints;
+      return m_ManipulatorJointState;
     }
 
     const Joints& getMobileBaseJointState() const {
-      return m_MobileBaseJoints;
+      return m_MobileBaseJointState;
     }
 
     const Pose& getPose() const {
@@ -59,11 +59,11 @@ class SherpaTTTeleClient {
 
   private:
     Pose m_Pose;
-    Joints m_ManipulatorJoints;
-    Joints m_MobileBaseJoints;
-    Image m_FrontalCamImage;
-    Image m_GripperCamImage;
-    IMU m_IMU;
+    Joints m_ManipulatorJointState;
+    Joints m_MobileBaseJointState;
+    Image m_FrontalCameraImage;
+    Image m_GripperCameraImage;
+    IMU m_IMUData;
     DEM m_DEM;
     DGPS m_DGPS;
 };
