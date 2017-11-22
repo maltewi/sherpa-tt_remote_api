@@ -1,0 +1,3 @@
+/media/wirkus/Data/development/sherpa_api/build/CMakeFiles/edit_cache.dir
+/media/wirkus/Data/development/sherpa_api/build/CMakeFiles/rebuild_cache.dir
+/media/wirkus/Data/development/sherpa_api/build/CMakeFiles/SherpaTTTeleClient.dir

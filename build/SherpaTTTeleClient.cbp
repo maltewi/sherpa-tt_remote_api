@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="SherpaTTTeleClient" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/media/wirkus/Data/development/sherpa_api/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/media/wirkus/Data/development/sherpa_api/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/media/wirkus/Data/development/sherpa_api/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="SherpaTTTeleClient">
+         <Option output="/media/wirkus/Data/development/sherpa_api/build/libSherpaTTTeleClient.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/media/wirkus/Data/development/sherpa_api/build" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 SherpaTTTeleClient" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="SherpaTTTeleClient/fast">
+         <Option output="/media/wirkus/Data/development/sherpa_api/build/libSherpaTTTeleClient.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/media/wirkus/Data/development/sherpa_api/build" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 SherpaTTTeleClient/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/media/wirkus/Data/development/sherpa_api/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/include/DEM.h">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/include/DGPS.h">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/include/IMU.h">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/include/Image.h">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/include/JointState.h">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/include/Joints.h">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/include/Motion2D.h">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/include/Pose.h">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/include/Quaternion.h">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/include/SherpaTTTeleClient.h">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/include/Vector3.h">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/src/DEM.cpp">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/src/DGPS.cpp">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/src/IMU.cpp">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/src/Image.cpp">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/src/JointState.cpp">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/src/Joints.cpp">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/src/Motion2D.cpp">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/src/Pose.cpp">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/src/Quaternion.cpp">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/src/SherpaTTTeleClient.cpp">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/src/Vector3.cpp">
+         <Option target="SherpaTTTeleClient"/>
+      </Unit>
+      <Unit filename="/media/wirkus/Data/development/sherpa_api/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
