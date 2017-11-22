@@ -7,6 +7,8 @@
 
 #include <JointState.h>
 
+using namespace sherpa_tt_remote_api;
+
 JointState::JointState()
 {
 	// TODO Auto-generated constructor stub

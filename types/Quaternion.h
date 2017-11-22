@@ -8,6 +8,7 @@
 #ifndef QUATERNION_H_
 #define QUATERNION_H_
 
+namespace sherpa_tt_remote_api{
 class Quaternion {
   public:
     Quaternion();
@@ -52,5 +53,6 @@ class Quaternion {
     double m_z;
     double m_w;
 };
+}
 
 #endif /* QUATERNION_H_ */

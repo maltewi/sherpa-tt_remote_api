@@ -7,6 +7,8 @@
 
 #include "Quaternion.h"
 
+using namespace sherpa_tt_remote_api;
+
 Quaternion::Quaternion()
 {
   m_x = 0.0;

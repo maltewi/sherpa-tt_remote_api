@@ -7,6 +7,8 @@
 
 #include "SherpaTTTeleClient.h"
 
+using namespace sherpa_tt_remote_api;
+
 SherpaTTTeleClient::SherpaTTTeleClient()
 {
 	// TODO Auto-generated constructor stub

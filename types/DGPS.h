@@ -8,6 +8,7 @@
 #ifndef DGPS_H_
 #define DGPS_H_
 
+namespace sherpa_tt_remote_api{
 class DGPS {
   public:
     DGPS();
@@ -100,5 +101,6 @@ class DGPS {
     double m_deviationLongitude;
     double m_deviationAltitude;
 };
+}
 
 #endif /* DGPS_H_ */

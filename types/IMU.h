@@ -10,6 +10,7 @@
 
 #include "Vector3.h"
 
+namespace sherpa_tt_remote_api{
 class IMU {
   public:
     IMU();
@@ -54,5 +55,6 @@ class IMU {
     Vector3 m_gyro;
     Vector3 m_mag;
 };
+}
 
 #endif /* IMU_H_ */

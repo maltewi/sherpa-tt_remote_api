@@ -8,6 +8,7 @@
 #ifndef VECTOR3_H_
 #define VECTOR3_H_
 
+namespace sherpa_tt_remote_api{
 class Vector3 {
   public:
     Vector3();
@@ -43,5 +44,6 @@ class Vector3 {
     double m_y;
     double m_z;
 };
+}
 
 #endif /* VECTOR3_H_ */

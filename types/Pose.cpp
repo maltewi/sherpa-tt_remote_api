@@ -7,6 +7,8 @@
 
 #include "Pose.h"
 
+using namespace sherpa_tt_remote_api;
+
 Pose::Pose()
 {
   m_position = Vector3();

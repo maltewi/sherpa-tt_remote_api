@@ -8,10 +8,11 @@
 #ifndef MOTION2D_H_
 #define MOTION2D_H_
 
+namespace sherpa_tt_remote_api{
 class Motion2D {
   public:
     Motion2D();
-    Motion2D(double headingRadians, double rotation, double traslation);
+    Motion2D(double headingRadians, double rotation, double translation);
     virtual ~Motion2D();
 
     double getHeadingRadians() const {
@@ -30,18 +31,19 @@ class Motion2D {
       m_rotation = rotation;
     }
 
-    double getTraslation() const {
-      return m_traslation;
+    double getTranslation() const {
+      return m_translation;
     }
 
-    void setTraslation(double traslation) {
-      m_traslation = traslation;
+    void setTranslation(double translation) {
+      m_translation = translation;
     }
 
   private:
     double m_headingRadians;
     double m_rotation;
-    double m_traslation;
+    double m_translation;
 };
+}
 
 #endif /* MOTION2D_H_ */

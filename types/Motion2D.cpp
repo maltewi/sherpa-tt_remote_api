@@ -7,17 +7,19 @@
 
 #include "Motion2D.h"
 
+using namespace sherpa_tt_remote_api;
+
 Motion2D::Motion2D()
 {
 	// TODO Auto-generated constructor stub
 
   m_headingRadians = 0.0;
   m_rotation = 0.0;
-  m_traslation = 0.0;
+  m_translation = 0.0;
 }
 
-Motion2D::Motion2D(double headingRadians, double rotation, double traslation)
-  :m_headingRadians(headingRadians), m_rotation(rotation), m_traslation(traslation)
+Motion2D::Motion2D(double headingRadians, double rotation, double translation)
+  :m_headingRadians(headingRadians), m_rotation(rotation), m_translation(translation)
 {
   // TODO
 }

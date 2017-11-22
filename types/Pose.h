@@ -13,6 +13,7 @@
 
 #include <string>
 
+namespace sherpa_tt_remote_api{
 class Pose {
   public:
     Pose();
@@ -58,5 +59,6 @@ class Pose {
     std::string m_referenceFrame;
     std::string m_frameName;
 };
+}
 
 #endif /* POSE_H_ */

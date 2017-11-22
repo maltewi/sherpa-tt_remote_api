@@ -8,6 +8,7 @@
 #ifndef JOINSTATE_H_
 #define JOINSTATE_H_
 
+namespace sherpa_tt_remote_api{
 class JointState {
   public:
     JointState();
@@ -52,5 +53,6 @@ class JointState {
     double m_acceleration;
     double m_effort;
 };
+}
 
 #endif /* JOINSTATE_H_ */

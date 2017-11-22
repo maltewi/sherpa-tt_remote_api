@@ -7,6 +7,8 @@
 
 #include "DGPS.h"
 
+using namespace sherpa_tt_remote_api;
+
 DGPS::DGPS()
 {
 	// TODO Auto-generated constructor stub

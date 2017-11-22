@@ -16,6 +16,8 @@
 #include "DGPS.h"
 #include "Motion2D.h"
 
+namespace sherpa_tt_remote_api{
+
 class SherpaTTTeleClient {
   public:
     SherpaTTTeleClient();
@@ -67,5 +69,6 @@ class SherpaTTTeleClient {
     DEM m_DEM;
     DGPS m_DGPS;
 };
+}
 
 #endif /* SHERPATTTELECLIENT_H_ */

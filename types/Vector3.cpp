@@ -7,6 +7,8 @@
 
 #include "Vector3.h"
 
+using namespace sherpa_tt_remote_api;
+
 Vector3::Vector3()
 {
   m_x = 0.0;

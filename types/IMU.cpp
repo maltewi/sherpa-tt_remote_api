@@ -7,6 +7,8 @@
 
 #include "IMU.h"
 
+using namespace sherpa_tt_remote_api;
+
 IMU::IMU()
 {
   // TODO Auto-generated destructor stub
