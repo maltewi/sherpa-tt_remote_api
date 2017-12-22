@@ -35,3 +35,8 @@ if(BUILD_SERVER)
     add_subdirectory(server)
 endif()
 
+set(TARGET_NAME ${PROJECT_NAME})
+
+CONFIGURE_FILE(${CMAKE_SOURCE_DIR}/sherpa_tt_remote_api.pc.in ${CMAKE_SOURCE_DIR}/sherpa_tt_remote_api.pc @ONLY)
+
+INSTALL(FILES ${CMAKE_SOURCE_DIR}/sherpa_tt_remote_api.pc DESTINATION lib/pkgconfig)

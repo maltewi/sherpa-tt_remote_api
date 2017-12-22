@@ -24,8 +24,3 @@ Quaternion::Quaternion(double x, double y, double z, double w)
 
 }
 
-Quaternion::~Quaternion()
-{
-	// TODO Auto-generated destructor stub
-}
-

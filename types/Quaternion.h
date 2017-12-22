@@ -11,9 +11,13 @@
 namespace sherpa_tt_remote_api{
 class Quaternion {
   public:
+    double m_x;
+    double m_y;
+    double m_z;
+    double m_w;  
+      
     Quaternion();
     Quaternion(double x, double y, double z, double w);
-    virtual ~Quaternion();
 
     double getW() const {
       return m_w;
@@ -46,12 +50,6 @@ class Quaternion {
     void setZ(double z) {
       m_z = z;
     }
-
-  private:
-    double m_x;
-    double m_y;
-    double m_z;
-    double m_w;
 };
 }
 

@@ -23,9 +23,4 @@ Vector3::Vector3(double x, double y, double z)
 
 }
 
-Vector3::~Vector3()
-{
-	// TODO Auto-generated destructor stub
-
-}
 

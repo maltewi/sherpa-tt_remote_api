@@ -7,8 +7,8 @@
 
 #include "Pose.h"
 
-using namespace sherpa_tt_remote_api;
-
+namespace sherpa_tt_remote_api{
+    
 Pose::Pose()
 {
   m_position = Vector3();
@@ -25,9 +25,6 @@ Pose::Pose(Vector3& position, Quaternion& orientation, std::string referenceFram
 
 }
 
-Pose::~Pose()
-{
-  // TODO Auto-generated destructor stub
+} // end namespace sherpa_tt_remote_api
 
-}
 

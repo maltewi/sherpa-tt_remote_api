@@ -11,9 +11,12 @@
 namespace sherpa_tt_remote_api{
 class Vector3 {
   public:
+    double m_x;
+    double m_y;
+    double m_z;
+      
     Vector3();
     Vector3(double x, double y, double z);
-    virtual ~Vector3();
 
     double getX() const {
       return m_x;
@@ -38,11 +41,6 @@ class Vector3 {
     void setZ(double z) {
       m_z = z;
     }
-
-  private:
-    double m_x;
-    double m_y;
-    double m_z;
 };
 }
 

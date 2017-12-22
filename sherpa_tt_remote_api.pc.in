@@ -7,5 +7,5 @@ Name: @TARGET_NAME@
 Description: @PROJECT_DESCRIPTION@
 Version: @PROJECT_VERSION@
 Requires: @PKGCONFIG_REQUIRES@
-Libs: -L${libdir} @PKGCONFIG_LIBS@
+Libs: -L${libdir} -l@TARGET_NAME@ @PKGCONFIG_LIBS@
 Cflags: -I${includedir}/@PROJECT_NAME@ @PKGCONFIG_CFLAGS@ -std=c++11

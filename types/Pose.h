@@ -14,12 +14,17 @@
 #include <string>
 
 namespace sherpa_tt_remote_api{
+    
 class Pose {
   public:
+    Vector3 m_position;
+    Quaternion m_orientation;
+    std::string m_referenceFrame;
+    std::string m_frameName;   
+      
     Pose();
     Pose(Vector3& position, Quaternion& orientation, std::string referenceFrame,
         std::string frameName);
-    virtual ~Pose();
 
     std::string getFrameName() const {
       return m_frameName;
@@ -52,13 +57,8 @@ class Pose {
     void setReferenceFrame(std::string referenceFrame) {
       m_referenceFrame = referenceFrame;
     }
-
-  private:
-    Vector3 m_position;
-    Quaternion m_orientation;
-    std::string m_referenceFrame;
-    std::string m_frameName;
 };
+
 }
 
 #endif /* POSE_H_ */
