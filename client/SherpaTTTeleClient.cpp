@@ -20,13 +20,13 @@ SherpaTTTeleClient::~SherpaTTTeleClient()
 	// TODO Auto-generated destructor stub
 }
 
-void SherpaTTTeleClient::sendMotion2D(Motion2D& eIngCommand)
+void SherpaTTTeleClient::sendMotionCommand(MotionCommand& eIngCommand)
 {
   // TODO
 
 }
 
-void SherpaTTTeleClient::sendManipulatorJointCommand(Motion2D& eIngCommand)
+void SherpaTTTeleClient::sendManipulatorJointCommand(JointState& eIngCommand)
 {
   // TODO
 

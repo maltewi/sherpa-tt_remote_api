@@ -34,6 +34,9 @@ class DEM {
     Image heightMap() const;
     void setHeightMap(const Image &heightMap);
 
+    Image validityMap() const;
+    void setValidityMap(const Image &validityMap);
+
     std::string referenceFrame() const;
     void setReferenceFrame(const std::string &referenceFrame);
 
@@ -46,6 +49,9 @@ private:
     float m_metersPerIntensity;
     //Will be FrameMode::MONO_FLOAT32 or FrameMode::MONO_UINT16
     Image m_heightMap;
+    //Will be FrameMode::MONO_UINT8 with zeroes cells with unknown
+    //values and ones for cells with valid measurements
+    Image m_validityMap;
     std::string m_referenceFrame;
     PointOfReference m_pointOfReference;
 };

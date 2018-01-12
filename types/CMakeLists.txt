@@ -5,7 +5,7 @@ set(TYPES_SOURCES  DGPS.cpp
                    IMU.cpp
                    Joints.cpp
                    JointState.cpp
-                   Motion2D.cpp
+                   MotionCommand.cpp
                    Pose.cpp
                    Quaternion.cpp
                    DEM.cpp
@@ -15,7 +15,7 @@ set(TYPES_HEADERS  DGPS.h
                    IMU.h
                    Joints.h
                    JointState.h
-                   Motion2D.h
+                   MotionCommand.h
                    Pose.h
                    Quaternion.h
                    DEM.h
