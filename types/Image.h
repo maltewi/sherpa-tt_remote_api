@@ -18,15 +18,17 @@ namespace sherpa_tt_remote_api{
 typedef std::vector<uint8_t> FrameBuffer;
 
 enum FrameMode{
-    RGB_UINT8,
-    BGR_UINT8,
-    MONO_UINT8,
+    UNDEFINED = 0,
+    RGB_UINT8, // Bit je Kanal
     RGB_UINT16,
+    RGB_FLOAT32,
+    BGR_UINT8,
     BGR_UINT16,
+    BGR_FLOAT32,
+    MONO_UINT8 = 128,
     MONO_UINT16,
     MONO_FLOAT32,
-    RGB_FLOAT32,
-    BGR_FLOAT32
+    JPEG = 256
 };
 
 typedef uint8_t Pixel1UInt8;
@@ -39,9 +41,16 @@ typedef float Pixel3Float32[3];
 
 class Image {
 public:
+    uint64_t m_time;
+    uint16_t m_width;
+    uint16_t m_height;
+    FrameMode m_frameMode;
+    FrameBuffer m_data;
+    
     Image();
-    Image(double time, double width, double height, bool isRGB, bool isGreyScale, char *data);
-    virtual ~Image();
+
+    Image(uint64_t time, uint16_t width, uint16_t height, enum FrameMode frame_mode, 
+          std::vector<uint8_t>& data);
 
     const FrameBuffer& getData() const {
         return m_data;
@@ -51,43 +60,39 @@ public:
         m_data = data;
     }
 
-    double getHeight() const {
+    uint16_t getHeight() const {
         return m_height;
     }
 
-    void setHeight(double height) {
+    void setHeight(uint16_t height) {
         m_height = height;
     }
 
     bool isIsGreyScale() const {
-        return m_isGreyScale;
-    }
-
-    void setGreyScale(bool isGreyScale) {
-        m_isGreyScale = isGreyScale;
+        return m_frameMode >= MONO_UINT8 && m_frameMode <= MONO_FLOAT32;
     }
 
     bool isIsRgb() const {
-        return m_isRGB;
+        return m_frameMode >= RGB_UINT8 && m_frameMode <= BGR_FLOAT32;
+    }
+    
+    bool isCompressed() const {
+        return m_frameMode == JPEG;
     }
 
-    void setRgb(bool isRgb) {
-        m_isRGB = isRgb;
-    }
-
-    double getTime() const {
+    int64_t getTime() const {
         return m_time;
     }
 
-    void setTime(double time) {
+    void setTime(int64_t time) {
         m_time = time;
     }
 
-    double getWidth() const {
+    uint16_t getWidth() const {
         return m_width;
     }
 
-    void setWidth(double width) {
+    void setWidth(uint16_t width) {
         m_width = width;
     }
 
@@ -103,15 +108,6 @@ public:
     uint8_t getNChannels() const;
     uint8_t getPixelDepthBit() const;
     uint8_t getPixelDepthByte() const;
-
-private:
-    double m_time;
-    double m_width;
-    double m_height;
-    bool m_isRGB;
-    bool m_isGreyScale;
-    FrameMode m_frameMode;
-    FrameBuffer m_data;
 };
 }
 

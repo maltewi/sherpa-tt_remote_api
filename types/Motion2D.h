@@ -11,9 +11,12 @@
 namespace sherpa_tt_remote_api{
 class Motion2D {
   public:
+    double m_headingRadians;
+    double m_rotation;
+    double m_translation;
+      
     Motion2D();
     Motion2D(double headingRadians, double rotation, double translation);
-    virtual ~Motion2D();
 
     double getHeadingRadians() const {
       return m_headingRadians;
@@ -38,11 +41,6 @@ class Motion2D {
     void setTranslation(double translation) {
       m_translation = translation;
     }
-
-  private:
-    double m_headingRadians;
-    double m_rotation;
-    double m_translation;
 };
 }
 

@@ -15,7 +15,7 @@ DGPS::DGPS()
 
 }
 
-DGPS::DGPS(long time, double latitude, int noOfSatellites, double altitude,
+DGPS::DGPS(uint64_t time, double latitude, int noOfSatellites, double altitude,
 double geoidalSeparation, double ageOfDifferentialCorrections,
 double deviationLatitude, double deviationLongitude,
 double deviationAltitude)

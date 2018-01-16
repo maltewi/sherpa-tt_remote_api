@@ -18,15 +18,10 @@ IMU::IMU()
   m_mag = Vector3();
 }
 
-IMU::IMU(long time, Vector3& acc, Vector3& gyro, Vector3& mag)
+IMU::IMU(uint64_t time, Vector3& acc, Vector3& gyro, Vector3& mag)
   :m_time(time), m_acc(acc), m_gyro(gyro), m_mag(mag)
 {
 	// TODO Auto-generated constructor stub
 
-}
-
-IMU::~IMU()
-{
-	// TODO Auto-generated destructor stub
 }
 

@@ -8,14 +8,20 @@
 #ifndef IMU_H_
 #define IMU_H_
 
+#include <stdint.h>
+
 #include "Vector3.h"
 
 namespace sherpa_tt_remote_api{
 class IMU {
-  public:
+  public:    
+    uint64_t m_time;
+    Vector3 m_acc;
+    Vector3 m_gyro;
+    Vector3 m_mag;
+        
     IMU();
-    IMU(long time, Vector3& acc, Vector3& gyro, Vector3& mag);
-    virtual ~IMU();
+    IMU(uint64_t time, Vector3& acc, Vector3& gyro, Vector3& mag);
 
     const Vector3& getAcc() const {
       return m_acc;
@@ -41,19 +47,13 @@ class IMU {
       m_mag = mag;
     }
 
-    long getTime() const {
+    int64_t getTime() const {
       return m_time;
     }
 
-    void setTime(long time) {
+    void setTime(int64_t time) {
       m_time = time;
     }
-
-  private:
-    long m_time;
-    Vector3 m_acc;
-    Vector3 m_gyro;
-    Vector3 m_mag;
 };
 }
 

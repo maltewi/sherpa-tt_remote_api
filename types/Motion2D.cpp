@@ -7,7 +7,7 @@
 
 #include "Motion2D.h"
 
-using namespace sherpa_tt_remote_api;
+namespace sherpa_tt_remote_api{
 
 Motion2D::Motion2D()
 {
@@ -24,8 +24,6 @@ Motion2D::Motion2D(double headingRadians, double rotation, double translation)
   // TODO
 }
 
-Motion2D::~Motion2D()
-{
-	// TODO Auto-generated destructor stub
 }
+
 

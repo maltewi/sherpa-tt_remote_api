@@ -8,15 +8,27 @@
 #ifndef DGPS_H_
 #define DGPS_H_
 
+#include <stdint.h>
+
 namespace sherpa_tt_remote_api{
 class DGPS {
   public:
+    uint64_t m_time;
+    double m_latitude;
+    int m_noOfSatellites;
+    double m_altitude;
+    double m_geoidalSeparation;
+    double m_ageOfDifferentialCorrections;
+    double m_deviationLatitude;
+    double m_deviationLongitude;
+    double m_deviationAltitude;  
+      
     DGPS();
-    DGPS(long time, double latitude, int noOfSatellites, double altitude,
+    DGPS(uint64_t time, double latitude, int noOfSatellites, double altitude,
          double geoidalSeparation, double ageOfDifferentialCorrections,
          double deviationLatitude, double deviationLongitude, double deviationAltitude);
 
-    virtual ~DGPS();
+    ~DGPS();
 
     double getAgeOfDifferentialCorrections() const {
       return m_ageOfDifferentialCorrections;
@@ -89,17 +101,6 @@ class DGPS {
     void setTime(long time) {
       m_time = time;
     }
-
-  private:
-    long m_time;
-    double m_latitude;
-    int m_noOfSatellites;
-    double m_altitude;
-    double m_geoidalSeparation;
-    double m_ageOfDifferentialCorrections;
-    double m_deviationLatitude;
-    double m_deviationLongitude;
-    double m_deviationAltitude;
 };
 }
 

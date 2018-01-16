@@ -11,23 +11,16 @@ using namespace sherpa_tt_remote_api;
 
 Image::Image()
 {
-	// TODO Auto-generated constructor stub
   m_time = 0.0;
   m_width = 0.0;
   m_height = 0.0;
-  m_isRGB = true;
-  m_isGreyScale = false;
+  m_frameMode = UNDEFINED;
 }
 
-Image::Image(double time, double width, double height, bool isRGB, bool isGreyScale, char *data)
-  :m_time(time), m_width(width), m_height(height), m_isRGB(isRGB), m_isGreyScale(isGreyScale)
-{
-  // TODO Auto-generated constructor stub
-}
-
-Image::~Image()
-{
-	// TODO Auto-generated destructor stub
+Image::Image(uint64_t time, uint16_t width, uint16_t height, enum FrameMode frame_mode, 
+             std::vector<uint8_t>& data)
+  :m_time(time), m_width(width), m_height(height), m_frameMode(frame_mode), m_data(data)
+{ 
 }
 
 uint8_t Image::getPixelSizeByte() const {
@@ -84,7 +77,7 @@ uint8_t Image::getPixelDepthBit() const{
 
 uint8_t Image::getPixelDepthByte() const
 {
-    return getPixelDepthByte()/8;
+    return getPixelDepthBit()/8;
 }
 
 template<typename Pixel>
