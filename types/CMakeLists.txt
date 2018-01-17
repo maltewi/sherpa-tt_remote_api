@@ -22,7 +22,6 @@ set(TYPES_HEADERS  DGPS.h
                    Vector3.h)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
-add_compile_options(-fPIC)
 add_library(${PROJECT_NAME}_types STATIC ${TYPES_HEADERS} ${TYPES_SOURCES})
 
 INSTALL(FILES ${TYPES_HEADERS} DESTINATION include/${PROJECT_NAME})
