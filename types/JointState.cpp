@@ -18,14 +18,9 @@ JointState::JointState()
   m_effort = 0.0;
 }
 
-JointState::JointState(long position, double speed, double acceleration, double effort)
+JointState::JointState(double position, double speed, double acceleration, double effort)
   :m_position(position), m_speed(speed), m_acceleration(acceleration), m_effort(effort)
 {
   // TODO
-}
-
-JointState::~JointState()
-{
-	// TODO Auto-generated destructor stub
 }
 

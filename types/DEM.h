@@ -19,8 +19,15 @@ enum PointOfReference{
 
 class DEM {
   public:
+    float m_metersPerPixelX;
+    float m_metersPerPixelY;
+    float m_metersPerIntensity;
+    //Will be FrameMode::MONO_FLOAT32 or FrameMode::MONO_UINT16
+    Image m_heightMap;
+    std::string m_referenceFrame;
+    PointOfReference m_pointOfReference;  
+      
     DEM();
-    virtual ~DEM();
 
     float metersPerPixelX() const;
     void setMetersPerPixelX(float metersPerPixelX);
@@ -39,15 +46,6 @@ class DEM {
 
     PointOfReference pointOfReference() const;
     void setPointOfReference(const PointOfReference &pointOfReference);
-
-private:
-    float m_metersPerPixelX;
-    float m_metersPerPixelY;
-    float m_metersPerIntensity;
-    //Will be FrameMode::MONO_FLOAT32 or FrameMode::MONO_UINT16
-    Image m_heightMap;
-    std::string m_referenceFrame;
-    PointOfReference m_pointOfReference;
 };
 }
 

@@ -11,9 +11,13 @@
 namespace sherpa_tt_remote_api{
 class JointState {
   public:
+    double m_position;
+    double m_speed;
+    double m_acceleration;
+    double m_effort;  
+      
     JointState();
-    JointState(long m_position, double m_speed, double m_acceleration, double m_effort);
-    virtual ~JointState();
+    JointState(double m_position, double m_speed, double m_acceleration, double m_effort);
 
     double getAcceleration() const {
       return m_acceleration;
@@ -46,12 +50,6 @@ class JointState {
     void setSpeed(double speed) {
       m_speed = speed;
     }
-
-  private:
-    long m_position;
-    double m_speed;
-    double m_acceleration;
-    double m_effort;
 };
 }
 

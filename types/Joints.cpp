@@ -20,15 +20,10 @@ Joints::Joints()
     m_jointStates = std::vector<JointState>();
 }
 
-Joints::Joints(long time, std::vector<JointState>& jointStates)
+Joints::Joints(uint64_t time, std::vector<JointState>& jointStates)
     : m_time(time), m_jointStates(jointStates)
 {
     // TODO
-}
-
-Joints::~Joints()
-{
-    // TODO Auto-generated destructor stub
 }
 
 size_t Joints::getJointIndexByName(const std::string &jointName)

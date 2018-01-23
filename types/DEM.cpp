@@ -15,11 +15,6 @@ DEM::DEM()
 
 }
 
-DEM::~DEM()
-{
-	// TODO Auto-generated destructor stub
-}
-
 float DEM::metersPerPixelX() const
 {
     return m_metersPerPixelX;
