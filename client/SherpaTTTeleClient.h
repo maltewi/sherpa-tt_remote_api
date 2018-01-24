@@ -14,7 +14,7 @@
 #include "IMU.h"
 #include "DEM.h"
 #include "DGPS.h"
-#include "Motion2D.h"
+#include "MotionCommand.h"
 
 namespace sherpa_tt_remote_api{
 
@@ -55,9 +55,9 @@ class SherpaTTTeleClient {
       return m_Pose;
     }
 
-    void sendMotion2D(Motion2D& eIngCommand);
+    void sendMotionCommand(MotionCommand& eIngCommand);
 
-    void sendManipulatorJointCommand(Motion2D& eIngCommand);
+    void sendManipulatorJointCommand(JointState& eIngCommand);
 
   private:
     Pose m_Pose;

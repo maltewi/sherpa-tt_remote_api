@@ -55,6 +55,17 @@ void DEM::setHeightMap(const Image &heightMap)
     m_heightMap = heightMap;
 }
 
+Image DEM::validityMap() const
+{
+    return m_heightMap;
+}
+
+void DEM::setValidityMap(const Image &validityMap)
+{
+    m_validityMap = validityMap;
+}
+
+
 std::string DEM::referenceFrame() const
 {
     return m_referenceFrame;
