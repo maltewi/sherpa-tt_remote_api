@@ -1,12 +1,12 @@
 /*
- * Motion2D.h
+ * MotionCommand.h
  *
  *  Created on: 17 nov. 2017
  *      Author: fjcl
  */
 
-#ifndef MOTION2D_H_
-#define MOTION2D_H_
+#ifndef MOTIONCOMMAND_H_
+#define MOTIONCOMMAND_H_
 
 namespace sherpa_tt_remote_api{
 class MotionCommand {
@@ -40,4 +40,4 @@ class MotionCommand {
 };
 }
 
-#endif /* MOTION2D_H_ */
+#endif /* MOTIONCOMMAND_H_ */

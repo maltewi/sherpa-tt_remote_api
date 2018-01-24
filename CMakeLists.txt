@@ -34,7 +34,7 @@ set(TYPES_SOURCES  types/DGPS.cpp
                    types/IMU.cpp
                    types/Joints.cpp
                    types/JointState.cpp
-                   types/Motion2D.cpp
+                   types/MotionCommand.cpp
                    types/Pose.cpp
                    types/Quaternion.cpp
                    types/DEM.cpp
@@ -44,7 +44,7 @@ set(TYPES_HEADERS  types/DGPS.h
                    types/IMU.h
                    types/Joints.h
                    types/JointState.h
-                   types/Motion2D.h
+                   types/MotionCommand.h
                    types/Pose.h
                    types/Quaternion.h
                    types/DEM.h
