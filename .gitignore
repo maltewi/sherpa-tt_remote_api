@@ -32,3 +32,5 @@
 *.app
 build
 *.user
+
+sherpa_tt_remote_api.pc
